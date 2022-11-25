@@ -31,6 +31,7 @@ rm -rf feeds/kiddin9/.diy
 ./scripts/feeds install -a
 
 mv -f feeds/kiddin9/{r81*,igb-intel} tmp/
+mv -f tmp/r8152 feeds/kiddin9/
 
 sed -i "s/192.168.1/10.0.0/" package/feeds/kiddin9/base-files/files/bin/config_generate
 
